@@ -35,6 +35,7 @@
     flex-direction: column;
     padding: 48px 20px 68px 32px;
     gap: 25px;
+   
     h2 {
         font-weight: 700;
         font-size: 24px;
@@ -49,9 +50,9 @@
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
         border-radius: 20px;
         //emplacement//taille
-        width: 285px;
         height: 73px;
         padding-left: 30px;
+        padding-right: 30px;
         font-weight: 500;
         gap: 20px;
         text-align: center;
@@ -65,7 +66,7 @@
             color: white;
             //style
             border-radius: 100%;
-            //emplacement
+            //emplacement//taille
             width: 24px;
             height: 24px;
             text-align: center;
@@ -86,21 +87,67 @@
 .diners-section{
     display: flex;
     flex-direction: column;
-    padding: 15px;
-    gap: 100px;
-    background-color: $main-background ;
-    &__diner {
-        display: flex;
-        flex-direction: column;
-        width: 340px;
-        height: 251px;
-        background: #FFFFFF;
-        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-        border-radius: 15px;
-        img {
-            width: 100%;
-            height: 60%;
-            object-fit:cover;
+    padding: 15px 15px 50px 15px;
+    background-color: $main-background;
+    h2 {
+        margin: 0px 0px -30px 0px;
+        font-weight: 700;
+        font-size: 24px;
+    }
+    &__box {
+        height: 270px;
+        .new {
+            @include nouveau;
+            position: relative;
+            top: 60px;
+            left: 230px;
+        }
+        .heart {
+            background-color: #FFFFFF;
+            border: none;
+            position: relative;
+            top: 217px;
+            left: 293px;
+        }
+        .disabled {
+            display: none;
+        }
+        i {
+            font-size: 21px;
+        } 
+        &__diner {
+            //display
+            display: flex;
+            flex-direction: column;
+            //emplacement//taille
+            height: 251px;
+            //style
+            background: #FFFFFF;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            //style-text
+            text-decoration: none;
+            
+            img {
+                height: 70%;
+                border-radius: 15px;
+                object-fit:cover;
+            }
+            &__resume {
+                display: flex;
+                flex-direction: column;
+                padding: 13px;
+                text-decoration: none;
+                color: black;
+                gap: 5px;
+                h3 {
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+                p {
+                    font-size: 17px;
+                }
+            }
         }
     }
 }

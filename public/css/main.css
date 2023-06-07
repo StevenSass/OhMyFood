@@ -48,7 +48,7 @@ table {
   border-spacing: 0;
 }
 
-button {
+.button-default {
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
@@ -94,10 +94,11 @@ footer {
   color: white;
   padding: 20px;
 }
-footer img {
-  width: 137px;
-  height: 27px;
-  object-fit: scale-down;
+footer h2 {
+  font-family: "Shrikhand";
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 26px;
   color: white;
 }
 footer a {
@@ -155,9 +156,9 @@ footer a {
   background: #F7F7F7;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
-  width: 285px;
   height: 73px;
   padding-left: 30px;
+  padding-right: 30px;
   font-weight: 500;
   gap: 20px;
   text-align: center;
@@ -188,21 +189,72 @@ footer a {
 .diners-section {
   display: flex;
   flex-direction: column;
-  padding: 15px;
-  gap: 100px;
+  padding: 15px 15px 50px 15px;
   background-color: #F7F7F7;
 }
-.diners-section__diner {
+.diners-section h2 {
+  margin: 0px 0px -30px 0px;
+  font-weight: 700;
+  font-size: 24px;
+}
+.diners-section__box {
+  height: 270px;
+}
+.diners-section__box .new {
+  background: #99E2D0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #008766;
+  padding: 7px 9px 6px 9px;
+  width: 80px;
+  position: relative;
+  top: 60px;
+  left: 230px;
+}
+.diners-section__box .heart {
+  background-color: #FFFFFF;
+  border: none;
+  position: relative;
+  top: 217px;
+  left: 293px;
+}
+.diners-section__box .disabled {
+  display: none;
+}
+.diners-section__box i {
+  font-size: 21px;
+}
+.diners-section__box__diner {
   display: flex;
   flex-direction: column;
-  width: 340px;
   height: 251px;
   background: #FFFFFF;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
+  text-decoration: none;
 }
-.diners-section__diner img {
-  width: 100%;
-  height: 60%;
+.diners-section__box__diner img {
+  height: 70%;
+  border-radius: 15px;
   object-fit: cover;
+}
+.diners-section__box__diner__resume {
+  display: flex;
+  flex-direction: column;
+  padding: 13px;
+  text-decoration: none;
+  color: black;
+  gap: 5px;
+}
+.diners-section__box__diner__resume h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.diners-section__box__diner__resume p {
+  font-size: 17px;
 }
