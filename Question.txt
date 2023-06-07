@@ -1,0 +1,11 @@
+Question : 
+pourquoi le fontawesome n'apparait
+pareil pour les image
+
+le 1 a coté des carte comment je peut lme faire
+= Margin
+
+la case nouveau meme question
+= Position absolut
+
+(parent = position relative)

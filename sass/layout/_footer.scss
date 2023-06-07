@@ -1,0 +1,19 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: $footer-color;
+    gap: 16px;
+    color: white ;
+    padding: 20px;
+    img {
+        width: 137px;
+        height: 27px;
+        object-fit: scale-down;
+        color: white;
+    }
+    a {
+        text-decoration: none;
+        padding: 3px;
+        color: white;
+    }
+}

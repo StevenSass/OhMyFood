@@ -1,0 +1,23 @@
+header {
+    height: 63px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    a {
+        position: absolute;
+        color: black;
+        left: 5%;
+        top: 24px;
+        
+    }
+    img {
+        width: 162px;
+        height: 44px;
+        object-fit: scale-down;
+        
+    }
+}
