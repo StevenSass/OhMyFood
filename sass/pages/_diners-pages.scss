@@ -1,0 +1,81 @@
+.tete {
+    img {
+        width: 100%;
+        height: 275px ;
+        object-fit: cover;
+    }
+}
+
+.page {
+    position: absolute;
+}
+
+.carte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $main-background;
+    border-radius: 40px 40px 0px 0px;
+    position: relative;
+    top: -60px;
+    padding: 30px 15px 50px 15px;
+
+    .big-button {
+        margin-top: 30px;
+        padding: 15px 50px 15px 50px;
+    }
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    h1 {
+        font-family: 'Shrikhand';
+        font-size: 28px;
+    }
+    .heart {
+        background-color: $main-background;
+        border: none;
+        font-size: 22px;
+    }
+    .disabled {
+        display: none;
+    }
+    margin-bottom: 30px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    &__title {
+        h3 {
+            padding: 12px;
+            font-size: 21px;
+            font-variant-caps: all-small-caps;
+        }   
+    }
+    &__plats {
+        @include plats;
+        h3 {
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 21px;
+        }
+        p {
+            font-size: 14px;
+        }
+        b {
+            font-size: 15px;
+            font-weight: 600;
+            margin: -21px 0px 0px 280px;
+        }
+    }
+}
+
+footer {
+    position: relative;
+    top: 1290px;
+}
