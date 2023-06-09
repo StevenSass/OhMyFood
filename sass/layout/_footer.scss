@@ -17,4 +17,9 @@ footer {
         padding: 3px;
         color: white;
     }
+    @media (min-width: 944px) {
+        flex-direction:row-reverse;
+        align-items: center;
+        padding-top: 60px;
+    }
 }

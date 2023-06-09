@@ -106,6 +106,13 @@ footer a {
   padding: 3px;
   color: white;
 }
+@media (min-width: 944px) {
+  footer {
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-top: 60px;
+  }
+}
 
 .localisation {
   display: flex;
@@ -138,18 +145,32 @@ footer a {
   text-align: center;
   margin-bottom: 15px;
 }
-
-.fonctionnement {
-  display: flex;
-  flex-direction: column;
-  padding: 48px 20px 68px 32px;
-  gap: 25px;
+@media (min-width: 1024px) {
+  .reserver {
+    padding: 40px 25px 50px 25px;
+    gap: 25px;
+  }
+  .reserver h1 {
+    width: 900px;
+    font-size: 35px;
+  }
+  .reserver p {
+    margin: 0px;
+  }
 }
-.fonctionnement h2 {
+
+.fonctionnement-section h2 {
   font-weight: 700;
   font-size: 24px;
+  padding: 20px;
 }
-.fonctionnement__box {
+.fonctionnement-section .fonctionnement {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px 68px 32px;
+  gap: 25px;
+}
+.fonctionnement-section .fonctionnement__box {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -163,7 +184,7 @@ footer a {
   gap: 20px;
   text-align: center;
 }
-.fonctionnement__box__sphere {
+.fonctionnement-section .fonctionnement__box__sphere {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -173,17 +194,38 @@ footer a {
   width: 24px;
   height: 24px;
   text-align: center;
-  position: absolute;
-  left: 20px;
+  margin-left: -42px;
 }
-.fonctionnement__box .fa-store {
+.fonctionnement-section .fonctionnement__box .fa-store {
   color: #9356DC;
 }
-.fonctionnement__box .fa-mobile-screen-button {
+.fonctionnement-section .fonctionnement__box .fa-mobile-screen-button {
   color: #7E7E7E;
 }
-.fonctionnement__box .fa-list-ul {
+.fonctionnement-section .fonctionnement__box .fa-list-ul {
   color: #7E7E7E;
+}
+@media (min-width: 1024px) {
+  .fonctionnement-section .fonctionnement {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1024px) {
+  .fonctionnement-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .fonctionnement-section__title {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .fonctionnement-section__title h2 {
+    padding: 20px 0px 20px 0px;
+    margin-left: -428px;
+  }
 }
 
 .diners-section {
@@ -258,15 +300,30 @@ footer a {
 .diners-section__box__diner__resume p {
   font-size: 17px;
 }
+@media (min-width: 1024px) {
+  .diners-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 70px;
+  }
+  .diners-section .column {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+  .diners-section .diners-section__box {
+    width: 400px;
+  }
+  .diners-section h2 {
+    margin: 10px 730px -46px 14px;
+  }
+}
 
 .tete img {
   width: 100%;
   height: 275px;
   object-fit: cover;
-}
-
-.page {
-  position: absolute;
 }
 
 .carte {
@@ -283,6 +340,12 @@ footer a {
 .carte .big-button {
   margin-top: 30px;
   padding: 15px 50px 15px 50px;
+}
+@media (min-width: 1024px) {
+  .carte {
+    width: 78%;
+    margin: 0% 10% 0% 10%;
+  }
 }
 
 .title {
@@ -307,7 +370,9 @@ footer a {
 .menu {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 12px;
+  width: 100%;
 }
 .menu__title h3 {
   padding: 12px;
@@ -317,9 +382,9 @@ footer a {
 .menu__plats {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 5px;
   padding: 15px;
-  width: 90%;
   height: 40px;
   background: white;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
@@ -338,8 +403,12 @@ footer a {
   font-weight: 600;
   margin: -21px 0px 0px 280px;
 }
+@media (min-width: 1024px) {
+  .menu {
+    width: 60%;
+  }
+}
 
-footer {
-  position: relative;
-  top: 1290px;
+.footer-diners {
+  margin-top: -60px;
 }
