@@ -1,20 +1,14 @@
-@import "./utils/variables";
-@import "./utils/functions";
-@import "./utils/mixins";
-@import "./utils/extensions";
-
 @import "./base/base";
-@import "./base/typography";
 
 @import "./components/buttons";
+@import "./components/heart";
+@import "./components/new";
 
-@import "./layout/header";
-@import "./layout/nav";
-@import "./layout/container";
-@import "./layout/form";
 @import "./layout/footer";
+@import "./layout/header";
 
-
-@import "./pages/work";
-@import "./pages/homepage";
 @import "./pages/diners-pages";
+@import "./pages/homepage";
+
+@import "./utils/mixins";
+@import "./utils/variables";

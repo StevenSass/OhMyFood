@@ -64,6 +64,14 @@ table {
   color: #FFFFFF;
 }
 
+.new3 {
+  display: none;
+}
+
+.new4 {
+  display: none;
+}
+
 header {
   height: 63px;
   width: 100%;
