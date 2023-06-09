@@ -21,7 +21,6 @@
     h1 {
         font-size: 24px ;
         text-align: center;
-        width: 275px;
         font-weight: 600;
     }
     p {
@@ -42,15 +41,22 @@
 }
 
 .fonctionnement-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     h2 {
+        margin: 1px 175px 1px 1px;
         font-weight: 700;
         font-size: 24px;
-        padding: 20px;
+        padding: 20px 0px 20px 0px;
     }
     .fonctionnement {
+
         display: flex;
         flex-direction: column;
-        padding: 10px 20px 68px 32px;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0px 68px 0px;
         gap: 25px;
        
         &__box {
@@ -64,6 +70,7 @@
             border-radius: 20px;
             //emplacement//taille
             height: 73px;
+            width: 273px;
             padding-left: 30px;
             padding-right: 30px;
             font-weight: 500;
@@ -94,24 +101,23 @@
             .fa-list-ul {
                 color: #7E7E7E;
             }
+            @media (min-width: 1024px) {
+                flex-direction: row;
+                width: 233px;
+            }
         }
-        @media (min-width: 1024px) {
+         @media (min-width: 1024px) {
             flex-direction: row;
         }
     }
     @media (min-width: 1024px) {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
         &__title {
             display: flex;
             align-items: flex-start;
             flex-wrap: wrap;
             h2 {
                 padding: 20px 0px 20px 0px;
-                margin-left: -428px;
+                margin-left: -478px;
             }
         }
     }
@@ -121,10 +127,11 @@
 .diners-section{
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 15px 15px 50px 15px;
     background-color: $main-background;
     h2 {
-        margin: 0px 0px -30px 0px;
+        margin: 0px 216px -30px 0px;
         font-weight: 700;
         font-size: 24px;
     }
@@ -135,13 +142,19 @@
             position: relative;
             top: 60px;
             left: 230px;
+            @media (min-width: 1024px) {
+                left: 330px;
+            }
         }
         .heart {
             background-color: #FFFFFF;
             border: none;
             position: relative;
             top: 217px;
-            left: 293px;
+            left: 290px;
+            @media (min-width: 1024px) {
+                left: 390px;
+            }
         }
         .disabled {
             display: none;
@@ -154,6 +167,7 @@
             display: flex;
             flex-direction: column;
             //emplacement//taille
+            width: 345px;
             height: 251px;
             //style
             background: #FFFFFF;
@@ -163,8 +177,9 @@
             text-decoration: none;
             
             img {
+                width: 345px;
                 height: 70%;
-                border-radius: 15px;
+                border-radius: 15px 15px 0px 0px;
                 object-fit:cover;
             }
             &__resume {
@@ -183,6 +198,15 @@
                 }
             }
         }
+        @media (min-width: 1024px) {
+            width: 450px;
+            &__diner {
+                width: 450px;
+                img {
+                    width: 450px;
+                }
+            }
+        }
     }
     @media (min-width: 1024px) {
         flex-direction: column;
@@ -194,11 +218,8 @@
             flex-direction: row;
             gap: 50px;
         }
-        .diners-section__box {
-            width: 400px;
-        }
         h2 {
-           margin: 10px 730px -46px 14px
+           margin: 10px 833px -46px 14px
         }
     }
 }
