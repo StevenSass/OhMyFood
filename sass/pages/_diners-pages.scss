@@ -35,15 +35,23 @@
         font-family: 'Shrikhand';
         font-size: 28px;
     }
-    .heart {
-        background-color: $main-background;
-        border: none;
-        font-size: 22px;
-    }
-    .disabled {
-        display: none;
-    }
     margin-bottom: 30px;
+    #heart1 + label {
+        top: 2px;
+        left: -5px;
+    }
+    #heart2 + label {
+        top: 2px;
+        left: -5px;
+    }
+    #heart3 + label {
+        top: 2px;
+        left: -5px;
+    }
+    #heart4 + label {
+        top: 2px;
+        left: -5px;
+    }
 }
 
 .menu {

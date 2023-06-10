@@ -1,3 +1,45 @@
+@keyframes heart-full {
+  0% {
+    transform: scale(0);
+    opacity: 0.1;
+  }
+  10% {
+    transform: scale(0.5);
+    opacity: 0.2;
+  }
+  20% {
+    transform: scale(1.5);
+    opacity: 0.3;
+  }
+  30% {
+    transform: scale(1.3);
+    opacity: 0.4;
+  }
+  40% {
+    transform: scale(1.2);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.6;
+  }
+  60% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  70% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  80% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  90%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -62,6 +104,182 @@ table {
   align-items: center;
   text-align: center;
   color: #FFFFFF;
+}
+
+#heart1 {
+  display: none;
+  position: relative;
+  top: 217px;
+  left: 290px;
+}
+#heart1 + label {
+  position: relative;
+  top: 206px;
+  left: 300px;
+  transition: transform 2000ms;
+  animation-direction: reverse;
+}
+@media (min-width: 1024px) {
+  #heart1 + label {
+    top: 217px;
+    left: 400px;
+  }
+}
+#heart1 + label .heart-empty {
+  position: absolute;
+  color: black;
+  opacity: 1;
+  font-size: 21px;
+}
+#heart1 + label .heart-full {
+  position: absolute;
+  opacity: 0;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 21px;
+  transition: opacity 800ms;
+}
+#heart1:checked + label .heart-empty {
+  opacity: 0;
+}
+#heart1:checked + label .heart-full {
+  opacity: 1;
+  font-size: 21px;
+  animation: heart-full 700ms;
+}
+
+#heart2 {
+  display: none;
+  position: relative;
+  top: 217px;
+  left: 290px;
+}
+#heart2 + label {
+  position: relative;
+  top: 206px;
+  left: 300px;
+  transition: transform 2000ms;
+  animation-direction: reverse;
+}
+@media (min-width: 1024px) {
+  #heart2 + label {
+    top: 217px;
+    left: 400px;
+  }
+}
+#heart2 + label .heart-empty {
+  position: absolute;
+  color: black;
+  opacity: 1;
+  font-size: 21px;
+}
+#heart2 + label .heart-full {
+  position: absolute;
+  opacity: 0;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 21px;
+  transition: opacity 800ms;
+}
+#heart2:checked + label .heart-empty {
+  opacity: 0;
+}
+#heart2:checked + label .heart-full {
+  opacity: 1;
+  font-size: 21px;
+  animation: heart-full 700ms;
+}
+
+#heart3 {
+  display: none;
+  position: relative;
+  top: 217px;
+  left: 290px;
+}
+#heart3 + label {
+  position: relative;
+  top: 206px;
+  left: 300px;
+  transition: transform 2000ms;
+  animation-direction: reverse;
+}
+@media (min-width: 1024px) {
+  #heart3 + label {
+    top: 217px;
+    left: 400px;
+  }
+}
+#heart3 + label .heart-empty {
+  position: absolute;
+  color: black;
+  opacity: 1;
+  font-size: 21px;
+}
+#heart3 + label .heart-full {
+  position: absolute;
+  opacity: 0;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 21px;
+  transition: opacity 800ms;
+}
+#heart3:checked + label .heart-empty {
+  opacity: 0;
+}
+#heart3:checked + label .heart-full {
+  opacity: 1;
+  font-size: 21px;
+  animation: heart-full 700ms;
+}
+
+#heart4 {
+  display: none;
+  position: relative;
+  top: 217px;
+  left: 290px;
+}
+#heart4 + label {
+  position: relative;
+  top: 206px;
+  left: 300px;
+  transition: transform 2000ms;
+  animation-direction: reverse;
+}
+@media (min-width: 1024px) {
+  #heart4 + label {
+    top: 217px;
+    left: 400px;
+  }
+}
+#heart4 + label .heart-empty {
+  position: absolute;
+  color: black;
+  opacity: 1;
+  font-size: 21px;
+}
+#heart4 + label .heart-full {
+  position: absolute;
+  opacity: 0;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 21px;
+  transition: opacity 800ms;
+}
+#heart4:checked + label .heart-empty {
+  opacity: 0;
+}
+#heart4:checked + label .heart-full {
+  opacity: 1;
+  font-size: 21px;
+  animation: heart-full 700ms;
 }
 
 .new3 {
@@ -251,6 +469,9 @@ footer a {
   padding: 15px 15px 50px 15px;
   background-color: #F7F7F7;
 }
+.diners-section .column {
+  padding-top: 30px;
+}
 .diners-section h2 {
   margin: 0px 216px -30px 0px;
   font-weight: 700;
@@ -272,31 +493,13 @@ footer a {
   padding: 7px 9px 6px 9px;
   width: 80px;
   position: relative;
-  top: 60px;
+  top: 40px;
   left: 230px;
 }
 @media (min-width: 1024px) {
   .diners-section__box .new {
     left: 330px;
   }
-}
-.diners-section__box .heart {
-  background-color: #FFFFFF;
-  border: none;
-  position: relative;
-  top: 217px;
-  left: 290px;
-}
-@media (min-width: 1024px) {
-  .diners-section__box .heart {
-    left: 390px;
-  }
-}
-.diners-section__box .disabled {
-  display: none;
-}
-.diners-section__box i {
-  font-size: 21px;
 }
 .diners-section__box__diner {
   display: flex;
@@ -395,13 +598,21 @@ footer a {
   font-family: "Shrikhand";
   font-size: 28px;
 }
-.title .heart {
-  background-color: #F7F7F7;
-  border: none;
-  font-size: 22px;
+.title #heart1 + label {
+  top: 2px;
+  left: -5px;
 }
-.title .disabled {
-  display: none;
+.title #heart2 + label {
+  top: 2px;
+  left: -5px;
+}
+.title #heart3 + label {
+  top: 2px;
+  left: -5px;
+}
+.title #heart4 + label {
+  top: 2px;
+  left: -5px;
 }
 
 .menu {
