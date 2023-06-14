@@ -45,34 +45,52 @@
 
 
 //Loader
+.loader-div {
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    .loader {
+        width: 100px;
+        height: 100px;
+        margin-top: 400px;
+        border: 5px solid;
+        border-color: $dark-purple transparent;
+        position: absolute;
+        border-radius: 50%;
+        display: inline-block;
+        box-sizing: border-box;
+        animation: rotation 1s linear infinite, loader 3s linear forwards;
+    }
+}
 
-.loader {
-    width: 100px;
-    height: 100px;
-    margin-top: 400px;
-    border: 5px solid;
-    border-color: $dark-purple transparent;
-    position: absolute;
-    border-radius: 50%;
-    display: inline-block;
-    box-sizing: border-box;
-    animation: rotation 1s linear infinite, loader 2s forwards;
-  }
-  
-  @keyframes rotation {
+
+@keyframes rotation {
     0% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
     100% {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  } 
+} 
 
-  @keyframes loader {
+@keyframes loader {
     from {
         opacity: (1)
     }
     to {
         opacity: (0);
     }
-  }
+}
+
+@keyframes loader-main {
+    0%,99% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
