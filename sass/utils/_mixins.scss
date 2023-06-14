@@ -44,7 +44,6 @@
     box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     gap: 15px;
-    text-overflow: ellipsis;
     overflow: hidden;
     &:hover {
         .menu__plats__column--check {
@@ -60,10 +59,14 @@
         justify-content: flex-end;
         align-items: flex-start;
         gap: 5px;
-        width: 80%;
+        width: 90%;
         padding: 15px 0px 15px 15px;
-        p {
+        overflow: hidden;
+        p, h3 {
+            width: 100%;
             text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
         }
     }
     &__column--prix {

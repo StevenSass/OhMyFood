@@ -118,6 +118,48 @@
     width: 1;
   }
 }
+.entree {
+  animation-delay: 200ms;
+  animation: entree 2s linear forwards 400ms;
+  opacity: 0;
+}
+@keyframes entree {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.plats {
+  animation-delay: 350ms;
+  animation: plats 1s linear forwards 800ms;
+  opacity: 0;
+}
+@keyframes plats {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.desserts {
+  animation-delay: 500ms;
+  animation: desserts 1s linear forwards 1200ms;
+  opacity: 0;
+}
+@keyframes desserts {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -706,9 +748,16 @@ footer a {
   width: 100%;
 }
 .menu__title h3 {
-  padding: 12px;
+  padding: 12px 0px 12px 0px;
   font-size: 21px;
   font-variant-caps: all-small-caps;
+}
+.menu__title span {
+  display: block;
+  width: 40px;
+  height: 1px;
+  border-top: 2px solid #99E2D0;
+  margin-top: -5px;
 }
 .menu__plats {
   display: flex;
@@ -718,7 +767,6 @@ footer a {
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   gap: 15px;
-  text-overflow: ellipsis;
   overflow: hidden;
 }
 .menu__plats:hover .menu__plats__column--check {
@@ -733,11 +781,15 @@ footer a {
   justify-content: flex-end;
   align-items: flex-start;
   gap: 5px;
-  width: 80%;
+  width: 90%;
   padding: 15px 0px 15px 15px;
+  overflow: hidden;
 }
-.menu__plats__column--text p {
+.menu__plats__column--text p, .menu__plats__column--text h3 {
+  width: 100%;
   text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .menu__plats__column--prix {
   display: flex;

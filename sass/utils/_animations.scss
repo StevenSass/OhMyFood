@@ -125,3 +125,46 @@
         width: 1;
     }
 }
+// cascade plats 
+
+.entree {
+    animation-delay: 200ms;
+    animation: entree 2s linear forwards 400ms;
+    opacity: 0;
+    @keyframes entree {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+}
+
+.plats {
+    animation-delay: 350ms;
+    animation: plats 1s linear forwards 800ms;
+    opacity: 0;
+    @keyframes plats {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+}
+
+.desserts {
+    animation-delay: 500ms;
+    animation: desserts 1s linear forwards 1200ms;
+    opacity: 0;
+    @keyframes desserts {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+}
