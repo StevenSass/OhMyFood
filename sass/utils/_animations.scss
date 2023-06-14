@@ -112,3 +112,14 @@
         z-index: -1;
     }
 }
+
+@keyframes check {
+    from {
+        opacity: 1;
+        translate: 0px 0px;
+    }
+    to {
+        translate: -70px 0px;
+        opacity: 1;
+    }
+}

@@ -106,6 +106,16 @@
     z-index: -1;
   }
 }
+@keyframes check {
+  from {
+    opacity: 1;
+    translate: 0px 0px;
+  }
+  to {
+    translate: -70px 0px;
+    opacity: 1;
+  }
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -700,14 +710,52 @@ footer a {
 }
 .menu__plats {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 5px;
-  padding: 15px;
-  height: 40px;
+  flex-direction: row;
+  justify-content: flex-start;
   background: white;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
-  border-radius: 15.0431px;
+  border-radius: 15px;
+  gap: 15px;
+  text-overflow: ellipsis;
+}
+.menu__plats:hover .menu__plats__column--check {
+  opacity: 1;
+  width: 70px;
+  border-radius: 0px 15px 15px 0px;
+  animation: check 1s linear forwards;
+}
+.menu__plats__column--text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 5px;
+  width: 80%;
+  padding: 15px 0px 15px 15px;
+}
+.menu__plats__column--text p {
+  text-overflow: ellipsis;
+}
+.menu__plats__column--prix {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 10%;
+  padding: 15px 0px 15px 0px;
+}
+.menu__plats__column--check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 70px;
+  font-size: 32px;
+  opacity: 0;
+  width: 70px;
+  background-color: #99E2D0;
+  color: white;
+  border-radius: 0px 15px 15px 0px;
 }
 .menu__plats h3 {
   font-weight: 600;
@@ -720,7 +768,6 @@ footer a {
 .menu__plats b {
   font-size: 15px;
   font-weight: 600;
-  margin: -21px 0px 0px 280px;
 }
 @media (min-width: 1024px) {
   .menu {

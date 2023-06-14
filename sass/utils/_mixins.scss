@@ -38,14 +38,54 @@
 
 @mixin plats {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 5px;
-    padding: 15px;
-    height: 40px;
+    flex-direction: row;
+    justify-content: flex-start;
     background: white;
     box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
-    border-radius: 15.0431px;
+    border-radius: 15px;
+    gap: 15px;
+    text-overflow: ellipsis;
+    &:hover {
+        .menu__plats__column--check {
+            opacity: 1;
+            width: 70px;
+            border-radius: 0px 15px 15px 0px;
+            animation: check 1s linear forwards;
+        }
+    }
+    &__column--text {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        gap: 5px;
+        width: 80%;
+        padding: 15px 0px 15px 15px;
+        p {
+            text-overflow: ellipsis;
+        }
+    }
+    &__column--prix {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 10%;
+        padding: 15px 0px 15px 0px;
+    }
+    &__column--check {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: 70px;
+        font-size: 32px;
+        opacity: 0;
+        width: 70px;
+        background-color: #99E2D0;
+        color: white;
+        border-radius: 0px 15px 15px 0px;
+    }
 }
 
 @mixin coeur {
