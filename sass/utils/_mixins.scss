@@ -45,12 +45,13 @@
     border-radius: 15px;
     gap: 15px;
     text-overflow: ellipsis;
+    overflow: hidden;
     &:hover {
         .menu__plats__column--check {
             opacity: 1;
             width: 70px;
             border-radius: 0px 15px 15px 0px;
-            animation: check 1s linear forwards;
+            animation: check 400ms linear forwards;
         }
     }
     &__column--text {
@@ -81,7 +82,7 @@
         left: 70px;
         font-size: 32px;
         opacity: 0;
-        width: 70px;
+        width: 0px;
         background-color: #99E2D0;
         color: white;
         border-radius: 0px 15px 15px 0px;
